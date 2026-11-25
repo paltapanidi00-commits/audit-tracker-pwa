@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.summary div {
+  padding: 15px;
+  background: #e2e8f0;
+  border-radius: 8px;
+}
+
+input, button, select {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.task {
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.task button {
+  margin-top: 8px;
+}
+
+@media (max-width: 550px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}
