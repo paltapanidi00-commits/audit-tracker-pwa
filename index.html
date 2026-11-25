@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e293b">
+  <title>Audit Tracker</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Audit Tracker</h1>
+    <p>Система учёта аудиторских задач</p>
+  </header>
+
+  <main>
+    <section class="summary">
+      <div>Всего задач: <strong id="total">0</strong></div>
+      <div>Выполнено: <strong id="done">0</strong></div>
+      <div>В работе: <strong id="progress">0</strong></div>
+    </section>
+
+    <section>
+      <h2>Добавить задачу</h2>
+      <input id="taskName" placeholder="Название задачи">
+      <input id="deadline" type="date">
+      <button onclick="addTask()">Добавить</button>
+    </section>
+
+    <section>
+      <h2>Мои задачи</h2>
+      <div id="tasks"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
